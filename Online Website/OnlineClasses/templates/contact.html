@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock title %}
+
+{% block body %}
+
+<form action="POST">
+    <div class="container mx-5 my-5">
+        <h2>Contact Us</h2>
+    </div>
+    <div class="container mx-5 my-5">
+        <div class="mb-3 row my-3">
+            <label for="sname" class="col-sm-2 col-form-label">Student Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="sname">
+            </div>
+            <div class="mb-3 row my-3">
+                <label for="mname" class="col-sm-2 col-form-label">Mother's Name: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="mname">
+                </div>
+            </div>
+            <div class="mb-3 row my-3">
+                <label for="fname" class="col-sm-2 col-form-label">Father's Name: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fname">
+                </div>
+            </div>
+
+            <div class="mb-3 row my-3">
+                <label for="mnumber" class="col-sm-2 col-form-label">Mobile Number: </label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="mnumber">
+                </div>
+
+            </div>
+
+            <div class="mb-3 row my-3">
+                <label for="class" class="col-sm-2 col-form-label">Class: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="class">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <button class="btn btn-success mx-5 my-4" type="submit">Submit</button>
+    </div>
+
+</form>
+{% endblock body %}
